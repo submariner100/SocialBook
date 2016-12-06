@@ -12,7 +12,7 @@ class SignInVC: UIViewController {
 
      override func viewDidLoad() {
           super.viewDidLoad()
-     
+               
      
      
      
@@ -25,3 +25,4 @@ class SignInVC: UIViewController {
     
 }
 
+// Colors : #673AB7 #4527A0 415CA4
