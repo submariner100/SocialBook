@@ -1,0 +1,6 @@
+framework module Pods_SocialBook {
+  umbrella header "Pods-SocialBook-umbrella.h"
+
+  export *
+  module * { export * }
+}
