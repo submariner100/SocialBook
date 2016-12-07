@@ -39,6 +39,7 @@
 		2797DFDC1DF7715300A8E8A8 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		2797DFDE1DF772F300A8E8A8 /* SignBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignBtn.swift; sourceTree = "<group>"; };
 		2797DFE01DF7750900A8E8A8 /* open_book_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open_book_icon.png; sourceTree = "<group>"; };
+		27E434CF1DF8338B00508E19 /* SocialBook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SocialBook.entitlements; sourceTree = "<group>"; };
 		432EC576BA1D7C8108C5039B /* Pods-SocialBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialBook/Pods-SocialBook.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +85,7 @@
 		2797DF8F1DF7307800A8E8A8 /* SocialBook */ = {
 			isa = PBXGroup;
 			children = (
+				27E434CF1DF8338B00508E19 /* SocialBook.entitlements */,
 				2797DFA91DF733E200A8E8A8 /* Resources */,
 				2797DFA81DF733D800A8E8A8 /* Constants */,
 				2797DFA71DF733CE00A8E8A8 /* Utils */,
@@ -194,6 +196,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 4WU9L65MXB;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -413,6 +420,7 @@
 			baseConfigurationReference = 1936B9C73504FA619ED90DF8 /* Pods-SocialBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SocialBook/SocialBook.entitlements;
 				DEVELOPMENT_TEAM = 4WU9L65MXB;
 				INFOPLIST_FILE = SocialBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -427,6 +435,7 @@
 			baseConfigurationReference = 432EC576BA1D7C8108C5039B /* Pods-SocialBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SocialBook/SocialBook.entitlements;
 				DEVELOPMENT_TEAM = 4WU9L65MXB;
 				INFOPLIST_FILE = SocialBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
