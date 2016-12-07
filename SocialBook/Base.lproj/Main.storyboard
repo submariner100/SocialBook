@@ -72,6 +72,9 @@
                                     <constraint firstAttribute="width" constant="140" id="dfm-Gy-fYa"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="f"/>
+                                <connections>
+                                    <action selector="facebookBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CED-zN-Yxs"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="J58-DD-hTE">
                                 <rect key="frame" x="46" y="410" width="283" height="115"/>
@@ -86,7 +89,7 @@
                                         <rect key="frame" x="0.0" y="41" width="283" height="21"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ht-rp-mLq" customClass="SignBtn" customModule="SocialBook" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="82" width="283" height="33"/>
@@ -95,6 +98,9 @@
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.54000000000000004" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cXp-fW-HbE"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -118,6 +124,10 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gdx-Nh-1qI" secondAttribute="bottom" id="lco-w0-9yA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="H2y-cd-xZL" id="cGt-zo-ope"/>
+                        <outlet property="pwdField" destination="DXR-QB-UzY" id="lnu-cq-HjE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

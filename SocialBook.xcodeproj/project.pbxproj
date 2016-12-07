@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		1936B9C73504FA619ED90DF8 /* Pods-SocialBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialBook/Pods-SocialBook.debug.xcconfig"; sourceTree = "<group>"; };
 		24EDFE7F4147DD5A6F0C6141 /* Pods_SocialBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		275C36981DF8900000AA0543 /* SocialBook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SocialBook.entitlements; sourceTree = "<group>"; };
 		2797DF8D1DF7307800A8E8A8 /* SocialBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2797DF901DF7307800A8E8A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2797DF921DF7307800A8E8A8 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -84,6 +85,7 @@
 		2797DF8F1DF7307800A8E8A8 /* SocialBook */ = {
 			isa = PBXGroup;
 			children = (
+				275C36981DF8900000AA0543 /* SocialBook.entitlements */,
 				2797DFA91DF733E200A8E8A8 /* Resources */,
 				2797DFA81DF733D800A8E8A8 /* Constants */,
 				2797DFA71DF733CE00A8E8A8 /* Utils */,
@@ -194,6 +196,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 4WU9L65MXB;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -333,6 +340,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -383,6 +391,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
