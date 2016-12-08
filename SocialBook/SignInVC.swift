@@ -11,6 +11,8 @@ import FBSDKLoginKit
 import FBSDKCoreKit
 import Firebase
 import FBSDKLoginKit
+import SwiftKeychainWrapper
+
 
 class SignInVC: UIViewController {
      
@@ -23,10 +25,23 @@ class SignInVC: UIViewController {
           
      }
      
+     override func viewDidAppear(_ animated: Bool) {
+     
+          if KeychainWrapper.standard.string(forKey: KEY_UID) != nil {
+               
+          print("Mike - ID found in keychain")
+               
+          performSegue(withIdentifier: "goToFeedVC", sender: nil)
+               
+          }
+          
+
+     }
      
      @IBAction func facebookBtnTapped(_ sender: Any) {
           
           let facebookLogin = FBSDKLoginManager()
+          
           facebookLogin.logIn(withReadPermissions: ["email"], from: self) { ( result, error ) in
                
                if error != nil {
@@ -51,9 +66,16 @@ class SignInVC: UIViewController {
           FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
                if error != nil {
                     print("Mike - unable to authenicate with Firebase - \(error)")
-                    
                } else {
                     print("Mike - Successfully authenicated with Firebase")
+                    
+                    if let user = user {
+                    
+                    self.completeSignIn(id: user.uid)
+                    
+                    
+                    }
+                    
                }
           })
      }
@@ -66,6 +88,10 @@ class SignInVC: UIViewController {
                          
                               print("Mike: Email user authenicated with Firebase")
                               
+                              if let user = user {
+                              self.completeSignIn(id: user.uid)
+                              }
+                              
                          } else {
                          
                               FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: { (user, error) in
@@ -74,6 +100,9 @@ class SignInVC: UIViewController {
                               } else {
                                         
                                    print("Mike: Successfully authenicate with Firebase")
+                                   if let user = user {
+                                   self.completeSignIn(id: user.uid)
+                                   }
                                    }
                               })
                                    
@@ -81,7 +110,16 @@ class SignInVC: UIViewController {
                          })
                
                     }
+          
                   }
-          }
+     
+          func completeSignIn(id: String) {
+          
+               let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
+               print("Mike Data saved to keychain \(keychainResult)")
+               performSegue(withIdentifier: "goToFeedVC", sender: nil)
+     }
+  
+}
 
 // Colors : #673AB7 #4527A0 415CA4
