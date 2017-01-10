@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		271D31621E25680000E7D774 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D31611E25680000E7D774 /* DataService.swift */; };
 		2779F5321DF8BBC000A8CBF9 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2779F5311DF8BBC000A8CBF9 /* FeedVC.swift */; };
 		2797DF911DF7307800A8E8A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797DF901DF7307800A8E8A8 /* AppDelegate.swift */; };
 		2797DF931DF7307800A8E8A8 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797DF921DF7307800A8E8A8 /* SignInVC.swift */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		1936B9C73504FA619ED90DF8 /* Pods-SocialBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialBook/Pods-SocialBook.debug.xcconfig"; sourceTree = "<group>"; };
 		24EDFE7F4147DD5A6F0C6141 /* Pods_SocialBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		271D31611E25680000E7D774 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		275C36981DF8900000AA0543 /* SocialBook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SocialBook.entitlements; sourceTree = "<group>"; };
 		2779F5311DF8BBC000A8CBF9 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		2797DF8D1DF7307800A8E8A8 /* SocialBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +166,7 @@
 		27AEC94C1DFA0894007604FC /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				271D31611E25680000E7D774 /* DataService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				2797DFDB1DF76F3200A8E8A8 /* RoundBtn.swift in Sources */,
 				2797DFD71DF76BCF00A8E8A8 /* TopView.swift in Sources */,
 				2797DFDD1DF7715300A8E8A8 /* TextField.swift in Sources */,
+				271D31621E25680000E7D774 /* DataService.swift in Sources */,
 				2779F5321DF8BBC000A8CBF9 /* FeedVC.swift in Sources */,
 				2797DF911DF7307800A8E8A8 /* AppDelegate.swift in Sources */,
 				2797DFD91DF76C6B00A8E8A8 /* Constants.swift in Sources */,
