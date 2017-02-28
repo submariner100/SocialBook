@@ -11,7 +11,6 @@ import Firebase
 
 let DB_BASE = FIRDatabase.database().reference()
 
-
 class DataService {
      
           static let ds = DataService()
@@ -36,9 +35,6 @@ class DataService {
      func createFirebaseDBUser(uid: String, userData: Dictionary<String, String>) {
      
           REF_USERS.child(uid).updateChildValues(userData)
-          
-          
-          
      }
      
      
