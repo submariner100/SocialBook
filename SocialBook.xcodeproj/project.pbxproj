@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		271D31621E25680000E7D774 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D31611E25680000E7D774 /* DataService.swift */; };
-		2763CE3C1E65DBCB00F6384C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763CE3B1E65DBCB00F6384C /* Post.swift */; };
 		2779F5321DF8BBC000A8CBF9 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2779F5311DF8BBC000A8CBF9 /* FeedVC.swift */; };
 		2797DF911DF7307800A8E8A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797DF901DF7307800A8E8A8 /* AppDelegate.swift */; };
 		2797DF931DF7307800A8E8A8 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797DF921DF7307800A8E8A8 /* SignInVC.swift */; };
@@ -24,6 +23,7 @@
 		2797DFE11DF7750900A8E8A8 /* open_book_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2797DFE01DF7750900A8E8A8 /* open_book_icon.png */; };
 		27AEC94E1DFA1882007604FC /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AEC94D1DFA1882007604FC /* PostCell.swift */; };
 		27B374311DF98144008D638E /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B374301DF98144008D638E /* CircleView.swift */; };
+		27E7DD811E6DFB8000FE821C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7DD801E6DFB8000FE821C /* Post.swift */; };
 		D4CE3FAF0FC15308DA9DA060 /* Pods_SocialBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24EDFE7F4147DD5A6F0C6141 /* Pods_SocialBook.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +32,6 @@
 		24EDFE7F4147DD5A6F0C6141 /* Pods_SocialBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		271D31611E25680000E7D774 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		275C36981DF8900000AA0543 /* SocialBook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SocialBook.entitlements; sourceTree = "<group>"; };
-		2763CE3B1E65DBCB00F6384C /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		2779F5311DF8BBC000A8CBF9 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		2797DF8D1DF7307800A8E8A8 /* SocialBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2797DF901DF7307800A8E8A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +49,7 @@
 		2797DFE01DF7750900A8E8A8 /* open_book_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open_book_icon.png; sourceTree = "<group>"; };
 		27AEC94D1DFA1882007604FC /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		27B374301DF98144008D638E /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		27E7DD801E6DFB8000FE821C /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		432EC576BA1D7C8108C5039B /* Pods-SocialBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialBook/Pods-SocialBook.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,7 +139,7 @@
 		2797DFA61DF733C600A8E8A8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2763CE3B1E65DBCB00F6384C /* Post.swift */,
+				27E7DD801E6DFB8000FE821C /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -316,7 +316,7 @@
 				27B374311DF98144008D638E /* CircleView.swift in Sources */,
 				2797DF931DF7307800A8E8A8 /* SignInVC.swift in Sources */,
 				2797DFDB1DF76F3200A8E8A8 /* RoundBtn.swift in Sources */,
-				2763CE3C1E65DBCB00F6384C /* Post.swift in Sources */,
+				27E7DD811E6DFB8000FE821C /* Post.swift in Sources */,
 				2797DFD71DF76BCF00A8E8A8 /* TopView.swift in Sources */,
 				2797DFDD1DF7715300A8E8A8 /* TextField.swift in Sources */,
 				271D31621E25680000E7D774 /* DataService.swift in Sources */,

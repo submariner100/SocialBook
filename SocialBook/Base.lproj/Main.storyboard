@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -182,13 +182,17 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="BD1-3E-way">
                                         <rect key="frame" x="8" y="8" width="327" height="49"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="H9J-8N-dfY" customClass="CircleView" customModule="SocialBook" customModuleProvider="target">
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="H9J-8N-dfY" customClass="CircleView" customModule="SocialBook" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
                                                 <color key="backgroundColor" red="0.4039215686" green="0.2274509804" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="49" id="BfJ-6G-gw8"/>
                                                     <constraint firstAttribute="width" constant="49" id="hQS-lz-YTI"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="pcc-Vv-xIm" appends="YES" id="YgO-lB-nwZ"/>
+                                                </connections>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add a caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wfp-EF-sSH" customClass="TextField" customModule="SocialBook" customModuleProvider="target">
                                                 <rect key="frame" x="64" y="0.0" width="199" height="49"/>
@@ -323,7 +327,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="captionTxt" destination="eL6-0I-B0u" id="mo2-gL-Y4F"/>
-                                            <outlet property="likesLbl" destination="ZUV-2s-sSz" id="SQc-pd-tCm"/>
+                                            <outlet property="likesLbl" destination="ZUV-2s-sSz" id="Xew-BA-alq"/>
                                             <outlet property="postImg" destination="37Z-zh-O1x" id="EP0-Wm-PK5"/>
                                             <outlet property="profileImg" destination="Bvu-jN-JF9" id="mlJ-uT-j51"/>
                                             <outlet property="usernameLbl" destination="fJm-Fu-Rvp" id="PO8-Nk-xKU"/>
@@ -347,6 +351,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageAdd" destination="H9J-8N-dfY" id="raN-cs-EtM"/>
                         <outlet property="tableView" destination="t4g-9I-muQ" id="ZCu-jE-JG8"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignInVC" id="eor-fo-e3Y"/>
                     </connections>
@@ -357,8 +362,13 @@
                         <action selector="signOutTapped:" destination="5Ib-8h-SaM" id="GtL-ZX-adt"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="pcc-Vv-xIm">
+                    <connections>
+                        <action selector="addImageTapped:" destination="5Ib-8h-SaM" id="gVa-A2-6Wp"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="759" y="35"/>
+            <point key="canvasLocation" x="790" y="35"/>
         </scene>
     </scenes>
     <resources>
