@@ -13,13 +13,12 @@ import Firebase
 
 class Post {
 
-     private var _likes: Int!
+     
      private var _caption: String!
      private var _imageUrl: String!
+     private var _likes: Int!
      private var _postKey: String!
-     
 
-     
      var caption: String {
           return _caption
      }
@@ -42,7 +41,7 @@ class Post {
           self._likes = likes
      }
      
-     init(postKey: String, postData: Dictionary<String, Any>) {
+     init(postKey: String, postData: Dictionary<String, AnyObject>) {
           self._postKey = postKey
           
           if let caption = postData["caption"] as? String {
@@ -52,10 +51,10 @@ class Post {
           if let imageUrl = postData["imageUrl"] as? String {
                self._imageUrl = imageUrl
           }
+          
           if let likes = postData["likes"] as? Int {
                self._likes = likes
           }
      }
-     
  
 }
