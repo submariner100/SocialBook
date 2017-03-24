@@ -13,7 +13,6 @@
 		2797DF931DF7307800A8E8A8 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797DF921DF7307800A8E8A8 /* SignInVC.swift */; };
 		2797DF961DF7307800A8E8A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2797DF941DF7307800A8E8A8 /* Main.storyboard */; };
 		2797DF981DF7307800A8E8A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2797DF971DF7307800A8E8A8 /* Assets.xcassets */; };
-		2797DF9B1DF7307800A8E8A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2797DF991DF7307800A8E8A8 /* LaunchScreen.storyboard */; };
 		2797DFA31DF730D500A8E8A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2797DFA21DF730D500A8E8A8 /* GoogleService-Info.plist */; };
 		2797DFD71DF76BCF00A8E8A8 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797DFD61DF76BCF00A8E8A8 /* TopView.swift */; };
 		2797DFD91DF76C6B00A8E8A8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797DFD81DF76C6B00A8E8A8 /* Constants.swift */; };
@@ -38,7 +37,6 @@
 		2797DF921DF7307800A8E8A8 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		2797DF951DF7307800A8E8A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2797DF971DF7307800A8E8A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2797DF9A1DF7307800A8E8A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2797DF9C1DF7307800A8E8A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2797DFA21DF730D500A8E8A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2797DFD61DF76BCF00A8E8A8 /* TopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
@@ -107,7 +105,6 @@
 				2797DF941DF7307800A8E8A8 /* Main.storyboard */,
 				2797DF971DF7307800A8E8A8 /* Assets.xcassets */,
 				2797DFE01DF7750900A8E8A8 /* open_book_icon.png */,
-				2797DF991DF7307800A8E8A8 /* LaunchScreen.storyboard */,
 				2797DF9C1DF7307800A8E8A8 /* Info.plist */,
 				2797DFA21DF730D500A8E8A8 /* GoogleService-Info.plist */,
 			);
@@ -250,7 +247,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2797DF9B1DF7307800A8E8A8 /* LaunchScreen.storyboard in Resources */,
 				2797DF981DF7307800A8E8A8 /* Assets.xcassets in Resources */,
 				2797DFE11DF7750900A8E8A8 /* open_book_icon.png in Resources */,
 				2797DF961DF7307800A8E8A8 /* Main.storyboard in Resources */,
@@ -337,14 +333,6 @@
 				2797DF951DF7307800A8E8A8 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2797DF991DF7307800A8E8A8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2797DF9A1DF7307800A8E8A8 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

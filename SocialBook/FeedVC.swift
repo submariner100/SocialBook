@@ -17,9 +17,6 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
      
      @IBOutlet weak var captionField: TextField!
      
-     
-     
-     
      var posts = [Post]()
      var imagePicker: UIImagePickerController!
      static var imageCache: NSCache<NSString, UIImage> = NSCache()
@@ -58,7 +55,6 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
           self.tableView.reloadData()
           
           })
-     
      }
      
      func numberOfSections(in tableView: UITableView) -> Int {
@@ -133,13 +129,28 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
                     
                     print("MIKE: Successfully uploaded image to Firebase storage")
                     let downloadURL = metadata?.downloadURL()?.absoluteString
+                    self.postToFirebase(imgUrl: downloadURL!)
+                    
                     }
                }
           }
     
      }
      
-   
+     func postToFirebase(imgUrl: String) {
+          let post: Dictionary<String, AnyObject> = [
+          "caption": captionField.text as AnyObject,
+          "imageUrl": imgUrl as AnyObject,
+          "likes": 0 as AnyObject
+          ]
+      let firebasePost = DataService.ds.REF_POSTS.childByAutoId()
+      firebasePost.setValue(post)
+      
+      captionField.text = ""
+      imageSelected = false
+      imageAdd.image = UIImage(named: "add-image")
+           }
+    
      @IBAction func signOutTapped(_ sender: Any) {
           
           let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
