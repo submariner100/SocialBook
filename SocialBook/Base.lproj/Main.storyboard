@@ -160,8 +160,8 @@
                                             <outletCollection property="gestureRecognizers" destination="RCW-bR-NvZ" appends="YES" id="TbU-Gq-cVY"/>
                                         </connections>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ck-JB-zgO">
-                                        <rect key="frame" x="155" y="21" width="65" height="33.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social Book" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ck-JB-zgO">
+                                        <rect key="frame" x="110" y="21" width="155.5" height="33.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="28"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -330,6 +330,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="captionTxt" destination="eL6-0I-B0u" id="mo2-gL-Y4F"/>
+                                            <outlet property="likeImg" destination="npG-KE-YQp" id="oyY-fY-L6q"/>
                                             <outlet property="likes" destination="ZUV-2s-sSz" id="RNz-OC-qBe"/>
                                             <outlet property="postImg" destination="37Z-zh-O1x" id="EP0-Wm-PK5"/>
                                             <outlet property="profileImg" destination="Bvu-jN-JF9" id="mlJ-uT-j51"/>
